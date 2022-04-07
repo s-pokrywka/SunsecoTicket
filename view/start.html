@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="../static/css/start.css">
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<div class="container">
+
+    <img class="logo col-lg-5 col-lg-offset-4 col-md-6 col-md-offset-3 col- col-sm-6 col-sm-offset-3 col-xs-9 col-xs-offset-2 " src="../static/img/sunseco-bw.png">
+
+        <div class="row">
+    <div class="col-lg-5 col-lg-offset-4 col-md-6 col-md-offset-3 col- col-sm-6 col-sm-offset-3 col-xs-9 col-xs-offset-2  column well" >
+        <form action="" method="post" class="form" role="form">
+  {{ form.csrf_token() }}
+ <d1>
+
+  {{ wtf.form_field(form.name, class='form-control') }}
+  {{ wtf.form_field(form.password, class='form-control') }}
+     {% if error %}
+     <div class="btn-danger" style="text-align: center">
+     {{ error }}
+     </div>
+     {% endif %}
+ </d1>
+            <div class="col-lg-offset-5">
+    <p><button type="submit" class="btn btn-primary">Zaloguj</button>
+
+                </div>
+        </form>
+
+<hr>
+</div>
+        </div>
+{% endblock %}

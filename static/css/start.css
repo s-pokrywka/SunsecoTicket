@@ -1,0 +1,17 @@
+body{
+    background-image: url("../img/Outsourcing-dzialu-IT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row {
+    margin-top:25%;
+    Opacity:90%;
+}
+.logo {
+
+background: black;
+height: 20vh;
+  width: 30vw;
+  padding: 3vh;
+  margin-top:5vh
+}
